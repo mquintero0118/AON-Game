@@ -135,7 +135,7 @@ h1 {
   padding: 1rem;
   padding-bottom: 0;
   flex-direction: column;
-  text-align: center; /* Center text */
+  text-align: center;
 }
 .game-container {
   display: flex;
@@ -169,6 +169,16 @@ h1 {
 
   .aon-logo {
     max-width: 200px; /* Adjust logo size for smaller screens */
+  }
+
+  h1, h2 {
+    font-size: 1.2rem; /* Reduce font size */
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center;
   }
 }
 </style>
