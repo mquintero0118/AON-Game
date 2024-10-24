@@ -9,81 +9,43 @@ export interface CardItem {
 
 export default <CardItem[]>[
   {
-    title: 'React',
+    title: 'Crecer',
     isFlipped: false,
     wasFound: false,
-    icon: require('@/assets/card-icons/react.svg'),
+    icon: require('@/assets/card-icons/AONWhite.png'),
     style: {
       width: '80px',
       marginTop: '20px'
     }
   },
   {
-    title: 'Vue',
+    title: 'Productividad',
     isFlipped: false,
     wasFound: false,
-    icon: require('@/assets/card-icons/vue.svg'),
+    icon: require('@/assets/card-icons/AONRed.png'),
     style: {
       width: '80px',
       marginTop: '20px'
     }
   },
   {
-    title: 'Svelte',
+    title: 'Analisis',
     isFlipped: false,
     wasFound: false,
-    icon: require('@/assets/card-icons/svelte.svg'),
+    icon: require('@/assets/card-icons/AONEslogan.png'),
     style: {
       width: '80px',
       marginTop: '20px'
     }
   },
   {
-    title: 'Laravel',
+    title: 'Interconectado',
     isFlipped: false,
     wasFound: false,
-    icon: require('@/assets/card-icons/laravel.svg'),
+    icon: require('@/assets/card-icons/AONCerro.png'),
     style: {
       width: '80px',
       marginTop: '20px'
-    }
-  },
-  {
-    title: 'TypeScript',
-    isFlipped: false,
-    wasFound: false,
-    icon: require('@/assets/card-icons/typescript.svg'),
-    style: {
-      width: '80px',
-      marginTop: '20px'
-    }
-  },
-  {
-    title: 'JavaScript',
-    isFlipped: false,
-    wasFound: false,
-    icon: require('@/assets/card-icons/javascript.svg'),
-    style: {
-      width: '80px',
-      marginTop: '20px'
-    }
-  },
-  {
-    title: 'PHP',
-    isFlipped: false,
-    wasFound: false,
-    icon: require('@/assets/card-icons/php.svg'),
-    style: {
-      width: '100px'
-    }
-  },
-  {
-    title: 'NodeJS',
-    isFlipped: false,
-    wasFound: false,
-    icon: require('@/assets/card-icons/nodejs.svg'),
-    style: {
-      width: '100px'
     }
   }
 ]

@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <ul>
+    <ul style="margin-top: 50px;">
       <li v-for="item in itens" :key="item.unique">
         <div
           class="card"
@@ -17,7 +16,7 @@
           <div class="card__face card__face--back">
             <img :src="item.icon" :alt="item.title" :style="item.style" />
             <div class="container">
-              <h4>
+              <h4 style="color: #556D79;">
                 <b>{{ item.title }}</b>
               </h4>
             </div>
@@ -25,7 +24,6 @@
         </div>
       </li>
     </ul>
-  </div>
 </template>
 
 <script setup>
