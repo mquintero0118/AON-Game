@@ -111,9 +111,6 @@ function calculateScore () {
       <img src="@/assets/AON/AONLogo-removebg-preview.png" width="353" height="145"  alt="AON" class="aon-logo">
       <h1 style="color: #262836; margin: 0;">Flip Card Memory Game</h1>
       <h2 style="color: #46535E; margin: 0;">{{ tries }} moves - {{ formattedTime }}</h2>
-      <!-- <p>Time Elapsed: {{ formattedTime }}</p>
-      <p>Items Found: {{ countFounded }} / {{ itens.length }}</p>
-      <p>Total Tries: {{ tries }}</p> -->
     </div>
     <CardItem @selected="processItem" />
   </div>
@@ -138,8 +135,7 @@ h1 {
   padding: 1rem;
   padding-bottom: 0;
   flex-direction: column;
-  height: 100%;
-  width: 100%;
+  text-align: center; /* Center text */
 }
 .game-container {
   display: flex;
@@ -159,5 +155,20 @@ h1 {
   color: #FF0010;
   border: none;
   border-radius: 5px;
+}
+.aon-logo {
+  width: 100%; /* Make logo responsive */
+  max-width: 353px; /* Maintain original max width */
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .data-container {
+    padding: 0.5rem; /* Reduce padding on smaller screens */
+  }
+
+  .aon-logo {
+    max-width: 200px; /* Adjust logo size for smaller screens */
+  }
 }
 </style>
