@@ -156,7 +156,7 @@ h1 {
   font-size: 16px;
   cursor: pointer;
   background-color: #42b883;
-  color: #fff;
+  color: #FF0010;
   border: none;
   border-radius: 5px;
 }
