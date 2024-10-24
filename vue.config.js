@@ -1,5 +1,3 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/vue3-memory-game'
-    : '/'
+  publicPath: process.env.VUE_APP_PUBLIC_PATH || '/'
 }
