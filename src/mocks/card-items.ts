@@ -47,5 +47,25 @@ export default <CardItem[]>[
       width: '80px',
       marginTop: '20px'
     }
+  },
+  {
+    title: 'Soluciones',
+    isFlipped: false,
+    wasFound: false,
+    icon: require('@/assets/card-icons/AONBlack.png'),
+    style: {
+      width: '80px',
+      marginTop: '20px'
+    }
+  },
+  {
+    title: 'Capital',
+    isFlipped: false,
+    wasFound: false,
+    icon: require('@/assets/card-icons/AON3Guys.png'),
+    style: {
+      width: '80px',
+      marginTop: '20px'
+    }
   }
 ]
