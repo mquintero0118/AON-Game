@@ -46,6 +46,8 @@ const restartGame = () => {
   resetTimer()
   generateRandomItems()
   isFinished.value = false
+  finalScore.value = 0 // Reset the final score when restarting
+  finalScore2.value = 0
 }
 
 onMounted(() => {
@@ -73,21 +75,27 @@ const processItem = (item) => {
 const isFinished = ref(false)
 
 const finalScore = ref(0)
+const finalScore2 = ref(0)
 
 function calculateScore () {
   // If score is already calculated, return the stored value
+  console.log('countFounded', countFounded.value)
   if (countFounded.value === 0) {
     return 0
   }
+  console.log('finalScore', finalScore.value)
   if (finalScore.value > 0) {
     return finalScore.value
   }
-
+  if (finalScore2.value > 0) {
+    return finalScore2.value
+  }
+  console.log('isFinished', isFinished.value)
   if (countFounded.value === itens.length && !isFinished.value) {
     isFinished.value = true
-    console.log('entreo')
-    // Calculate score only once
-    finalScore.value = tries.value * 200 / elapsedTime.value
+    // Calculate score only once - now fewer tries = better score
+    finalScore.value = (2000 / tries.value) / (elapsedTime.value / 10)
+    finalScore2.value = finalScore.value
     return finalScore.value
   }
 
@@ -151,8 +159,8 @@ h1 {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  background-color: #42b883;
-  color: #FF0010;
+  background-color: #FF0010;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
 }
