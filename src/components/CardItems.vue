@@ -116,4 +116,11 @@ ul {
     overflow-y: auto;
   }
 }
+
+h4 {
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+}
 </style>
